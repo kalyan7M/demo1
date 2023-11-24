@@ -1,5 +1,9 @@
 import "./App.css"
 import img from "./images/profile1.jpeg"
+import AnchorLink from "react-anchor-link-smooth-scroll"
+import { Link } from "react-router-dom"
+import img1 from "./images/project1.png"
+import img2 from "./images/linkedin.png"
 
 let Home = () => {
     return (
@@ -85,6 +89,63 @@ let Home = () => {
                     </div>
                 </div>
             </div>
+            <div className="projects">
+                <div className="project">
+                    <div className="project-img">
+                        <img src={img1} alt=""/>
+                    </div>
+                    <div className="project-data">
+                        <h2>Realestate Project</h2>
+                        <h5>May 2022 - July 2022</h5>
+                        <p>This webpage is created using the HTML,CSS and JAVASCRIPT.</p>
+                        <button className="readmore">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+                <div className="project">
+                    <div className="project-img">
+                        <img src={img2} alt=""/>
+                    </div>
+                    <div className="project-data">
+                        <h2>Linked Clone Web page</h2>
+                        <h5>May 2022 - July 2022</h5>
+                        <p>This webpage is created using the HTML,CSS and JAVASCRIPT.</p>
+                        <button className="readmore">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+                <div className="project">
+                    <div className="project-img">
+                        <img src={img1} alt=""/>
+                    </div>
+                    <div className="project-data">
+                        <h2>Realestate Project</h2>
+                        <h5>May 2022 - July 2022</h5>
+                        <p>This webpage is created using the HTML,CSS and JAVASCRIPT.</p>
+                        <button className="readmore">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+                <div className="project">
+                    <div className="project-img">
+                        <img src={img1} alt=""/>
+                    </div>
+                    <div className="project-data">
+                        <h2>Realestate Project</h2>
+                        <h5>May 2022 - July 2022</h5>
+                        <p>This webpage is created using the HTML,CSS and JAVASCRIPT.</p>
+                        <button className="readmore">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+                <div className="project">
+                    <div className="project-img">
+                        <img src={img1} alt=""/>
+                    </div>
+                    <div className="project-data">
+                        <h2>Realestate Project</h2>
+                        <h5>May 2022 - July 2022</h5>
+                        <p>This webpage is created using the HTML,CSS and JAVASCRIPT.</p>
+                        <button className="readmore">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+            </div>
             <div className="education" id="education">
                 <h1>Education</h1>
                 <p>My education has been a journey of self-discovery and growth. My educational details are as follows</p>
@@ -102,7 +163,7 @@ let Home = () => {
                                 </div>
                             </div>
                             <div>
-                                I have complated Bachelor's degree in Information Technology at Zeal College and research, pune. My CGPA is 7.6
+                                I have complated Bachelor's degree in Electrical & Electronics Engineering , Guntur. My CGPA is 7.6
                             </div>
                         </div>
                         <div className="edu-eng">
@@ -113,11 +174,11 @@ let Home = () => {
                                 <div>
                                     <p className="eng-clg">Sri Nagarjuna Junior College</p>
                                     <p className="eng-br">Secondary (XII)</p>
-                                    <p className="eng-year">Jun 2016 - Mar 2028</p>
+                                    <p className="eng-year">Jun 2016 - Mar 2018</p>
                                 </div>
                             </div>
                             <div>
-                                I completed my class 12 high school education at Hutatma Rajguru Mahavidyalaya, Rajguru Nagar, where I studied Science with Computer Science.
+                                I completed my class 12 high school education at Sri Nagarjuna Junior College, Guntur,
                             </div>
                         </div>
                         <div className="edu-eng">
@@ -132,12 +193,9 @@ let Home = () => {
                                 </div>
                             </div>
                             <div>
-                                I completed my class 10 education at New English School, Kalus , where I studied Science with Computer Application.
+                                I completed my class 10 education at Z.P.High School, My CGPA is 8.8
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <hr className="line"></hr>
                     </div>
                 </div>
             </div>
@@ -155,6 +213,31 @@ let Home = () => {
                     <button>Send</button>
                 </div>
 
+            </div>
+            <div className="footer">
+                <div className="name">
+                    <h1>Deepala Pavan Kalyan</h1>
+                </div>
+                <div className="phone">
+                    <div><i class="fa-solid fa-phone"></i> +91 9876543210</div>
+                    <div><i class="fa-regular fa-envelope"></i>  gmail@gmail.com</div>
+                </div>
+                <div className="footer-link">
+                    <Link to="/" className="links">About</Link>
+                    <AnchorLink href="#skills" className="links">Skills</AnchorLink>
+                    <AnchorLink href="#education" className="links">Education</AnchorLink>
+                    <AnchorLink href="#contact" className="links">Contact</AnchorLink>
+                </div>
+                <div className="footer-icons">
+                    <div><i class="fa-brands fa-github"></i></div>
+                    <div><i class="fa-brands fa-linkedin"></i></div>
+                    <div><i class="fa-brands fa-whatsapp"></i></div>
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                </div>
+                <div className="copyright">
+                    <div><i class="fa-regular fa-copyright"></i></div>
+                    <div>2023 Pavan Kalyan .All Rights Reserved.</div>
+                </div>
             </div>
         </>
     )
